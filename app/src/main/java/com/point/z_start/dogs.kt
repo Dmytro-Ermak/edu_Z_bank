@@ -8,14 +8,14 @@ enum class BiteType {
     STRAIGHT, OVERBITE, UNDERBITE
 }
 
-class Husky(override val weight: Double, override val age: Int) : Dog {
+class Husky(override val weight: Double, override val age: Int, override val breed: String) : Dog {
     override val biteType = BiteType.STRAIGHT
     override fun who() {
         print("This animal is a dog\n")
     }
 }
 
-class Corgi(override val weight: Double, override val age: Int) : Dog {
+class Corgi(override val weight: Double, override val age: Int, override val breed: String) : Dog {
     override val biteType = BiteType.OVERBITE
     override fun who() {
         print("This animal is a dog\n")

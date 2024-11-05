@@ -4,8 +4,8 @@ fun main() {
     val zooShop = ZooShop()
 
     val dog = zooShop.determineAnimal("Husky", 30.0, 5)
-    dog?.who()
+    println(zooShop.who(dog))
 
     val cat = zooShop.determineAnimal("Siamese", 4.5, 3)
-    cat?.who()
+    println(zooShop.who(cat))
 }
